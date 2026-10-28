@@ -1,0 +1,90 @@
+.checkout-page {
+  min-height:100vh;
+  display:flex;
+  flex-direction:column
+}
+.checkout-page .site-header {
+  position:relative
+}
+.checkout-result {
+  width:min(600px,calc(100% - 40px));
+  margin:auto;
+  text-align:center;
+  padding:84px 0 100px
+}
+.result-mark {
+  width:66px;
+  height:66px;
+  border-radius:50%;
+  margin:0 auto 25px;
+  display:grid;
+  place-items:center;
+  background:#e4e9d8;
+  color:#545e3e;
+  font-size:22px
+}
+.checkout-result .eyebrow {
+  color:#777a69;
+  margin-bottom:12px
+}
+.checkout-result h1 {
+  font:500 clamp(38px,7vw,58px)/1.1 var(--serif);
+  letter-spacing:-.04em;
+  margin:0 0 15px
+}
+.checkout-result>p:not(.eyebrow) {
+  font-size:12px;
+  line-height:1.8;
+  color:#77766f;
+  max-width:420px;
+  margin:0 auto
+}
+.result-actions {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:25px;
+  margin:29px 0
+}
+.checkout-result>small {
+  color:#929189;
+  font-size:9px
+}
+.checkout-footer {
+  text-align:center;
+  padding:20px;
+  border-top:1px solid var(--line);
+  font-size:9px;
+  color:#77766f
+}
+.checkout-page .site-header .text-link {
+  font-family:var(--sans)
+}
+.checkout-page .site-header .brand {
+  font-family:var(--sans)
+}
+.checkout-page .site-header .dark-link {
+  margin:0
+}
+.result-mark.cancelled {
+  background:#eee7db;
+  color:#826b4c
+}
+.checkout-page .site-header .button,.checkout-page .button {
+  font-family:var(--sans)
+}
+@media(max-width:500px) {
+  .result-actions {
+  flex-direction:column;
+  gap:18px
+}
+.checkout-result {
+  padding:70px 0
+}
+.checkout-page .site-header {
+  height:66px;
+  padding:0 18px
+}
+
+}
+

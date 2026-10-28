@@ -1,0 +1,41 @@
+#chatbot-burbuja {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+}
+#abrir-chatbot {
+  font-family: Arial, sans-serif;
+  background: #232323;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 8px #0008;
+  cursor: pointer;
+  font-size: 28px;
+}
+#chatbot-ventana {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 320px;
+  background: #181818;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #000a;
+  padding: 18px 12px 12px 12px;
+}
+#cerrar-chatbot {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#chat-box, #chat-box * {
+  font-family: Arial, sans-serif !important;
+}

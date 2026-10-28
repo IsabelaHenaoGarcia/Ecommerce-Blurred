@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Blurred</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/contacto.css">
+</head>
+<body>
+  <nav role="navigation" aria-label="Barra de navegación principal">
+  <div class="nav-left">
+    <a href="../pages/blurred_web.html" class="logo">Blurred</a>
+  </div>
+  <div class="nav-center">
+    <div class="nav-links" id="navLinks">
+      <a href="../pages/blurred_web.html">Inicio</a>
+      <a href="../pages/catalogo.html">Catálogo</a>
+      <a href="../pages/hombres.html">Hombres</a>
+      <a href="../pages/mujeres.html">Mujeres</a>
+      <a href="../pages/eventos.html">Eventos</a>
+      <a href="../pages/contacto.html" class="activo">Contacto</a>
+    </div>
+  </div>
+  <div class="nav-right">
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+    </div>
+    <div class="iconos-nav">
+      <div class="usuario-container">
+        <a href="../pages/registro.html" class="icono-niebla usuario-icono">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <div class="usuario-popup">
+          <p><strong>Nombre:</strong> <span id="popup-nombre"></span></p>
+          <p><strong>Email:</strong> <span id="popup-email"></span></p>
+          <a href="../pages/perfil.html">Ver perfil</a>
+        </div>
+      </div>
+      <div class="carrito-container icono-niebla" onclick="iniciarPago()">
+        <i class="fa fa-shopping-cart"></i>
+        <span span class="contador-carrito"></span>
+        <div class="carrito-popup">
+          <ul class="lista-carrito"></ul>
+          <p class="carrito-vacio">El carrito está vacío.</p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+  <main class="contacto-main">
+    <h1>Contacto</h1>
+    <p>¡Contáctanos a través de nuestras redes sociales o visítanos!</p>
+    <div class="contact-links">
+      <a class="instagram-link" href="https://www.instagram.com/blurred_xr/" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a class="whatsapp-link" href="https://wa.me/573178861221" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a class="location-link" href="https://maps.app.goo.gl/D44nPdu2fc1b9XX1A" target="_blank">
+        <i class="fas fa-map-marker-alt"></i> Ubicación
+      </a>
+    </div>
+  </main>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+  <script src="../assets/js/contacto.js"></script>
+  <script src="../assets/js/blurred_web_logica.js"></script>
+</body>
+</html>

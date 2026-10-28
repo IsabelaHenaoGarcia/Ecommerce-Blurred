@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blurred - Hombres</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/mujeres.css">
+</head>
+
+<body>
+    <nav role="navigation" aria-label="Barra de navegación principal">
+        <div class="nav-left">
+            <a href="../pages/blurred_web.html" class="logo">Blurred</a>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="../pages/blurred_web.html">Inicio</a>
+            <a href="../pages/catalogo.html">Catálogo</a>
+            <a href="../pages/hombres.html" class="activo">Hombres</a>
+            <a href="../pages/mujeres.html">Mujeres</a>
+            <a href="../pages/eventos.html">Eventos</a>
+            <a href="../pages/contacto.html">Contacto</a>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+            </div>
+            <div class="iconos-nav">
+                <div class="usuario-container">
+                <a href="../pages/registro.html" class="icono-niebla usuario-icono">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <div class="usuario-popup">
+                    <p><strong>Nombre:</strong> <span id="popup-nombre"></span></p>
+                    <p><strong>Email:</strong> <span id="popup-email"></span></p>
+                    <a href="../pages/perfil.html">Ver perfil</a>
+                    </div>
+                </div>
+                <div class="carrito-container icono-niebla" onclick="iniciarPago()">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="contador-carrito"></span>
+                    <div class="carrito-popup">
+                        <ul class="lista-carrito"></ul>
+                        <p class="carrito-vacio">El carrito está vacío.</p>
+                    </div>
+            </div>
+
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+        </div>
+    </nav>
+
+    <main class="catalogo">
+        <h1>Hombres</h1>
+        <div class="filtros">
+            <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
+            <select id="filtroCategoria">
+        <option value="">Todas las categorías</option>
+        <option value="camisetas">Camisetas</option>
+        <option value="jeans">Jeans</option>
+        <option value="chaquetas">Chaquetas</option>
+        <option value="bermudas">Bermudas</option>
+      </select>
+            <button id="btnFiltrar">Filtrar</button>
+        </div>
+
+        <div class="productos">
+            <div class="producto" data-id="hombre1" data-categoria="camisetas">
+                <img src="../assets/images/hombre1.jpg">
+                <h3>Camiseta BoxyFit</h3>
+                <p>$60.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="hombre2" data-categoria="jeans">
+                <img src="../assets/images/hombre2.jpg">
+                <h3>Tech Pant Black</h3>
+                <p>$89.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="hombre3" data-categoria="camiseta">
+                <img src="../assets/images/hombre3.jpg">
+                <h3>Basica Oversize</h3>
+                <p>$40.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="hombre4" data-categoria="camisetas">
+                <img src="../assets/images/hombre4.jpg">
+                <h3>Camibuzo Neo Tribal Black</h3>
+                <p>$65.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="hombre5" data-categoria="chaquetas">
+                <img src="../assets/images/hombre5.jpg">
+                <h3>Sobretodo Cuerina</h3>
+                <p>$140.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="camiseta-oversize" data-categoria="camisetas">
+                <img src="../assets/images/img3.jpg">
+                <h3>Camiseta Oversize</h3>
+                <p>$45.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="jean-negro" data-categoria="jeans">
+                <img src="../assets/images/img5.jpg">
+                <h3>Jean Negro</h3>
+                <p>$85.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="chaqueta-de-cuero" data-categoria="chaquetas">
+                <img src="../assets/images/img7.jpg">
+                <h3>Chaqueta de Cuero</h3>
+                <p>$65.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto" data-id="bermuda-de-coleccion" data-categoria="bermudas">
+                <img src="../assets/images/img9.jpg">
+                <h3>Bermuda de Colección</h3>
+                <p>$45.000</p>
+                <div class="acciones-producto">
+                    <button class="btn-quitar">- Quitar</button>
+                    <button class="btn-anadir">+ Añadir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="mensaje-container"></div>
+    <script src="../assets/js/hombres.js"></script>
+    <script src="../assets/js/blurred_web_logica.js"></script>
+</body>
+
+</html>

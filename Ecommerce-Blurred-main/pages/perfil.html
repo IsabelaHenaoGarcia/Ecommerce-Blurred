@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Perfil - Blurred</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/perfil.css">
+  <link rel="stylesheet" href="../assets/css/registro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav role="navigation" aria-label="Barra de navegación principal">
+    <div class="nav-left">
+        <a href="../pages/blurred_web.html" class="logo">Blurred</a>
+    </div>
+    <div class="nav-links" id="navLinks">
+        <a href="../pages/blurred_web.html">Inicio</a>
+        <a href="../pages/catalogo.html">Catálogo</a>
+        <a href="../pages/hombres.html">Hombres</a>
+        <a href="../pages/mujeres.html">Mujeres</a>
+        <a href="../pages/eventos.html">Eventos</a>
+        <a href="../pages/contacto.html">Contacto</a>
+    </div>
+    <div class="nav-right">
+        <div class="search-bar">
+        <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+        </div>
+        <div class="iconos-nav">
+        <div class="usuario-container">
+            <span class="icono-niebla usuario-icono"><i class="fa-solid fa-user"></i></span>
+            <div class="usuario-popup">
+            <p><strong>Nombre:</strong> <span id="popup-nombre"></span></p>
+            <p><strong>Email:</strong> <span id="popup-email"></span></p>
+            <a href="../pages/perfil.html">Ver perfil</a>
+            </div>
+        </div>
+        <div class="carrito-container icono-niebla">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span class="contador-carrito">0</span>
+            <div class="carrito-popup">
+            <ul class="lista-carrito"></ul>
+            <p class="carrito-vacio">El carrito está vacío.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </nav>
+  <main class="perfil-main">
+    <div class="perfil-container">
+      <div class="perfil-form" id="perfil-info">
+        <h1>Mi Perfil</h1>
+        <div class="input-group">
+          <label><i class="fa-solid fa-user"></i> Nombre</label>
+          <p id="perfil-nombre"></p>
+        </div>
+        <div class="input-group">
+          <label><i class="fa-solid fa-envelope"></i> Correo electrónico</label>
+          <p id="perfil-email"></p>
+        </div>
+        <button id="cerrar-sesion">Cerrar sesión</button>
+      </div>
+    </div>
+  </main>
+  <script src="../assets/js/perfil.js"></script>
+</body>
+</html>

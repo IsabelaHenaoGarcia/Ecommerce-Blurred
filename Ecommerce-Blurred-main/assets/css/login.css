@@ -1,0 +1,109 @@
+.login-main {
+  padding-top: 100px;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-form {
+  background: #fff;
+  color: #222;
+  padding: 32px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #0001;
+  max-width: 370px;
+  width: 100%;
+  font-family: 'UnifrakturCook', cursive;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-family: 'UnifrakturCook', cursive;
+  color: #222;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'UnifrakturCook', cursive;
+  letter-spacing: 1px;
+}
+
+.input-group i {
+  margin-right: 6px;
+  color: #888;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px 0;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'UnifrakturCook', cursive;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button:hover {
+  background: #444;
+}
+
+.login-form input::placeholder {
+  font-family: 'UnifrakturCook', cursive;
+  color: #888;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.login-error {
+  display: none;
+  background: #ffeaea;
+  color: #c00;
+  border: 1px solid #ffb3b3;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 12px auto 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'UnifrakturCook', cursive;
+  max-width: 90%;
+  width: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'UnifrakturCook', cursive;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,18 @@
+<div id="chatbot-burbuja">
+  <button id="abrir-chatbot">
+    <i class="fa-solid fa-comments"></i>
+  </button>
+  <div id="chatbot-ventana" style="display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+      <span style="font-family:'UnifrakturCook',cursive; font-size:1.2rem;">BlurredBot</span>
+      <button id="cerrar-chatbot">&times;</button>
+    </div>
+    <div id="chatbot-mensajes" style="height:140px; overflow-y:auto; background:#232323; border-radius:8px; padding:8px; margin-bottom:8px; font-size:15px;">
+      <div><strong>Bot:</strong> ¡Hola! ¿En qué puedo ayudarte hoy?</div>
+    </div>
+    <form id="chatbot-form" style="display:flex; gap:6px;">
+      <input id="chatbot-input" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" style="flex:1; border-radius:6px; border:1px solid #444; background:#232323; color:#fff; padding:6px 10px;">
+      <button type="submit" style="background:#444; color:#fff; border:none; border-radius:6px; padding:6px 14px; cursor:pointer;">Enviar</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151512">
+  <meta name="description" content="Blurred: prendas urbanas para vestir a tu manera. Explora nuestra nueva colección.">
+  <title>Blurred — viste diferente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/blurred_web_aspecto.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
+</head>
+<body class="home-page">
+  <div class="announcement"><span>ENVÍO GRATIS EN COMPRAS DESDE $200.000</span><a href="#coleccion">Descubre la colección <i class="fa-solid fa-arrow-right"></i></a></div>
+  <header class="site-header">
+    <a class="brand" href="../pages/blurred_web.html" aria-label="Blurred, inicio">Blurred</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a class="active" href="../pages/blurred_web.html">Inicio</a><a href="../pages/catalogo.html">Tienda</a><a href="../pages/hombres.html">Hombre</a><a href="../pages/mujeres.html">Mujer</a><a href="../pages/eventos.html">Nuestra historia</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-field"><i class="fa-solid fa-magnifying-glass"></i><input id="homeSearch" type="search" placeholder="Buscar prendas" aria-label="Buscar productos destacados"></label>
+      <div class="usuario-container home-account">
+        <a class="account-link usuario-icono" id="usuario-link" href="../pages/registro.html" aria-label="Mi cuenta"><i class="fa-regular fa-user"></i></a>
+        <div class="usuario-popup"><p><strong>Nombre:</strong> <span id="popup-nombre">Invitado</span></p><p><strong>Email:</strong> <span id="popup-email"></span></p><a href="../pages/perfil.html">Ver perfil</a></div>
+      </div>
+      <button class="cart-trigger" id="openCart" aria-label="Abrir carrito"><i class="fa-solid fa-bag-shopping"></i><span>Bolsa</span><b class="contador-carrito" id="homeCartCount">0</b></button>
+    </div>
+  </header>
+
+  <div class="fondo-dinamico" aria-hidden="true"></div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="../assets/images/img1.jpg" alt="Estilo urbano de la colección Blurred" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><p class="eyebrow"><span></span> NUEVA COLECCIÓN · 2026</p><h1 id="hero-title">Tu estilo.<br><em>Sin permiso.</em></h1><p class="hero-lead">Piezas urbanas para quienes hacen de la calle su propia pasarela.</p><div class="hero-actions"><a class="button button-light" href="../pages/catalogo.html">Explorar colección <i class="fa-solid fa-arrow-right"></i></a><a class="text-link" href="#universo">Conoce Blurred</a></div></div>
+      <div class="hero-index"><span>01</span><i></i><span>03</span></div><div class="hero-caption">PEREIRA · COLOMBIA</div>
+    </section>
+
+    <section class="service-strip" aria-label="Ventajas de compra"><div><i class="fa-solid fa-truck-fast"></i><span><b>Envíos a todo Colombia</b><small>Tu pedido, donde estés</small></span></div><div><i class="fa-solid fa-arrow-rotate-left"></i><span><b>Cambios fáciles</b><small>Hasta 30 días</small></span></div><div><i class="fa-solid fa-lock"></i><span><b>Compra segura</b><small>Pagos protegidos</small></span></div></section>
+
+    <section class="collection section-wrap" id="coleccion">
+      <div class="section-heading"><div><p class="eyebrow">HECHO PARA DESTACAR</p><h2>Lo nuevo <em>de la calle</em></h2></div><a class="text-link dark-link" href="../pages/catalogo.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="product-grid" id="homeProducts">
+        <article class="home-product" data-search="camiseta boxyfit hombre negra oversize"><div class="product-photo"><span class="product-tag">MÁS VENDIDO</span><img src="../assets/images/hombre1.jpg" alt="Camiseta BoxyFit negra" loading="lazy"><button class="quick-add" data-add data-id="hombre1" data-name="Camiseta BoxyFit" data-price="60000" aria-label="Añadir Camiseta BoxyFit"><i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Camiseta BoxyFit</h3><p>Negro lavado · Unisex</p></div><strong>$60.000</strong></div></article>
+        <article class="home-product" data-search="tech pant black pantalon cargo hombre"><div class="product-photo"><span class="product-tag tag-muted">NUEVO</span><img src="../assets/images/hombre2.jpg" alt="Pantalón Tech Pant Black" loading="lazy"><button class="quick-add" data-add data-id="hombre2" data-name="Tech Pant Black" data-price="89000" aria-label="Añadir Tech Pant Black"><i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Tech Pant Black</h3><p>Negro · Corte relajado</p></div><strong>$89.000</strong></div></article>
+        <article class="home-product" data-search="abrigo alaska chaqueta mujer invierno"><div class="product-photo"><span class="product-tag">EDICIÓN LIMITADA</span><img src="../assets/images/mujer3.jpg" alt="Abrigo Alaska" loading="lazy"><button class="quick-add" data-add data-id="abrigo-alaska" data-name="Abrigo Alaska" data-price="85000" aria-label="Añadir Abrigo Alaska"><i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Abrigo Alaska</h3><p>Negro · Silueta amplia</p></div><strong>$85.000</strong></div></article>
+        <article class="home-product" data-search="camiseta oversize mujer basica"><div class="product-photo"><img src="../assets/images/mujer1.jpg" alt="Camiseta Oversize" loading="lazy"><button class="quick-add" data-add data-id="camiseta-oversize" data-name="Camiseta Oversize" data-price="45000" aria-label="Añadir Camiseta Oversize"><i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Camiseta Oversize</h3><p>Esencial · Fit amplio</p></div><strong>$45.000</strong></div></article>
+      </div>
+      <p class="no-results" id="noProducts" hidden>No encontramos prendas con ese nombre. <a href="../pages/catalogo.html">Explora todo el catálogo</a>.</p>
+    </section>
+
+    <section class="editorial" id="universo"><div class="editorial-photo"><img src="../assets/images/img8.jpg" alt="Editorial de moda urbana Blurred" loading="lazy"></div><div class="editorial-copy"><p class="eyebrow">NO SEGUIR. DEJAR HUELLA.</p><h2>La ciudad<br>es <em>tuya.</em></h2><p>Diseñamos para el movimiento, la noche y todas las versiones de ti. Blurred nace en Pereira para vestir a quienes no esperan permiso para ser.</p><a class="button button-dark" href="../pages/eventos.html">Conoce nuestra historia <i class="fa-solid fa-arrow-right"></i></a><span class="editorial-mark">B.</span></div></section>
+
+    <section class="category-section section-wrap"><div class="section-heading"><div><p class="eyebrow">ENCUENTRA TU FIT</p><h2>Vestir <em>a tu manera</em></h2></div></div><div class="category-grid"><a class="category-card category-men" href="../pages/hombres.html"><img src="../assets/images/hombre4.jpg" alt="Moda masculina Blurred" loading="lazy"><span>01 / HOMBRE</span><b>Actitud en<br>cada capa <i class="fa-solid fa-arrow-right"></i></b></a><a class="category-card category-women" href="../pages/mujeres.html"><img src="../assets/images/mujer2.jpg" alt="Moda femenina Blurred" loading="lazy"><span>02 / MUJER</span><b>Tu forma,<br>tus reglas <i class="fa-solid fa-arrow-right"></i></b></a></div></section>
+
+    <section class="newsletter"><p class="eyebrow">EL CLUB BLURRED</p><h2>La calle te cuenta <em>primero.</em></h2><p>Novedades, lanzamientos y acceso anticipado. Sin ruido, solo lo bueno.</p><form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Tu correo electrónico</label><input id="newsletterEmail" type="email" placeholder="Tu correo electrónico" required><button type="submit">Quiero entrar <i class="fa-solid fa-arrow-right"></i></button></form><small id="newsletterMessage" aria-live="polite">Al suscribirte aceptas recibir novedades de Blurred.</small></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="../pages/blurred_web.html">BLURRED<span>®</span></a><p>Desde Pereira, para donde quieras.</p><nav aria-label="Enlaces del pie"><a href="../pages/contacto.html">Contacto</a><a href="../pages/catalogo.html">Tienda</a><a href="../pages/perfil.html">Mi cuenta</a></nav><small>© 2026 Blurred. Viste diferente.</small></footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Tu bolsa de compra" aria-hidden="true"><div class="drawer-heading"><div><p class="eyebrow">TU SELECCIÓN</p><h2>Tu bolsa <span id="drawerCount">(0)</span></h2></div><button class="drawer-close" id="closeCart" aria-label="Cerrar carrito"><i class="fa-solid fa-xmark"></i></button></div><div class="drawer-items" id="drawerItems"></div><div class="drawer-empty" id="drawerEmpty"><i class="fa-solid fa-bag-shopping"></i><p>Tu bolsa está esperando<br>algo especial.</p><button class="text-link" id="continueShopping">Seguir explorando <i class="fa-solid fa-arrow-right"></i></button></div><div class="drawer-footer" id="drawerFooter"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div><small>Impuestos incluidos. El envío se calcula al finalizar.</small><button class="button button-dark checkout-button" id="checkoutButton">Continuar al pago <i class="fa-solid fa-arrow-right"></i></button><p class="secure-note"><i class="fa-solid fa-lock"></i> Pago seguro con Stripe</p></div></aside>
+  <div class="toast" id="homeToast" role="status" aria-live="polite"></div>
+  <script src="../assets/js/blurred_web_logica.js"></script><script src="../assets/js/home.js"></script>
+</body>
+</html>
